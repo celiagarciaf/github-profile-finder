@@ -16,15 +16,21 @@
       <p>El usuario no existe</p>
     </div>
   </div>
+    
+  <div>
+    <GitHubRepo v-for="rep in listadoReps" :datosRep="rep" :key="rep.id" />
+  </div>
+
   </div>
 </template>
 
 <script>
+import GitHubRepo from './GitHubRepo.vue'
 import axios from "axios";
 
 export default {
   components: {
-    
+    GitHubRepo
   },
   name: 'GitHub',
   data () {
