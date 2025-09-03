@@ -1,14 +1,14 @@
 <template>
   <div class="github-container">
     <div class="search-box">
-      <label for="name">🔍 Nombre de usuario:</label>
+      <label for="name">Nombre de usuario:</label>
       <input
         type="text"
         id="name"
         v-model="user"
         @keydown.enter="obtenerUsuario"
         :disabled="deshabilitado"
-        placeholder="Escribe un usuario de GitHub..."
+        placeholder="Introduzca un usuario de GitHub aquí..."
       />
       <button @click="obtenerUsuario" :disabled="deshabilitado">
         Buscar
@@ -28,7 +28,7 @@
       </div>
 
       <div v-else class="error-msg">
-        <p>⚠️ El usuario no existe</p>
+        <p>El usuario no existe</p>
       </div>
     </div>
 
@@ -123,7 +123,7 @@ export default {
 
 .search-box button {
   padding: 0.6rem 1rem;
-  background: #42b983;
+  background: #ae3ec9;
   border: none;
   border-radius: 8px;
   color: white;
@@ -132,7 +132,7 @@ export default {
 }
 
 .search-box button:hover:not(:disabled) {
-  background: #36996e;
+  background: #862e9c;
 }
 
 .search-box button:disabled {
@@ -174,14 +174,14 @@ export default {
 .repos-btn {
   padding: 0.5rem 1rem;
   border: none;
-  background: #35495e;
+  background: #ae3ec9;
   color: white;
   border-radius: 8px;
   cursor: pointer;
 }
 
 .repos-btn:hover:not(:disabled) {
-  background: #2a3746;
+  background: #862e9c;
 }
 
 .repos-btn:disabled {

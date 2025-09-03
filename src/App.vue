@@ -1,7 +1,7 @@
 <template>
   <div class="app-container">
     <header class="header">
-      <img src="./assets/logo.svg" alt="Logo Vue" class="logo" />
+      <img src="./assets/logo-github.png" alt="Logo Vue" class="logo" />
       <h1>Buscador de GitHub en línea</h1>
     </header>
 
@@ -41,7 +41,7 @@ export default {
 
 h1 {
   font-size: 35px;
-  color: #42b983;
+  color: whitesmoke;
 }
 
 main {
